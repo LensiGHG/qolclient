@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "qolclient",
+  "version": "${version}",
+  "name": "QoL Client",
+  "description": "Purely visual/QoL toggles: no hurt cam, no fog, no nausea, fullbright, no pumpkin overlay, reduced fire overlay, zoom, FPS/coord HUD, toggle-sprint. No reach/hitbox/killaura/x-ray/fly - nothing that changes gameplay packets.",
+  "authors": ["you"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.qolclient.QolClient"
+    ]
+  },
+  "mixins": [
+    "qolclient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}

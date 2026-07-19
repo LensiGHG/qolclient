@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "package": "net.qolclient.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "HurtCamMixin",
+    "FogMixin",
+    "NauseaMixin",
+    "OverlayMixin",
+    "ZoomMixin",
+    "BlockOutlineMixin",
+    "TotemScaleMixin",
+    "CapeMixin",
+    "PlayerRenderStateAccessor",
+    "ElytraMixin",
+    "CrosshairMixin",
+    "BlockBreakCounterMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
