@@ -25,10 +25,10 @@ jobs:
 
       - name: Build mod
         run: gradle build --no-daemon
-        working-directory: qolclient/qolclient
+        working-directory: qolclient
 
       - name: Upload built jar
         uses: actions/upload-artifact@v4
         with:
           name: qolclient-jar
-          path: qolclient/qolclient/build/libs/*.jar
+          path: qolclient/build/libs/*.jar
